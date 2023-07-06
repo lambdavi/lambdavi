@@ -1,6 +1,6 @@
 <p align="center">
-<a href="https://github.com/drkostas">
-    <img src="https://readme-typing-svg.demolab.com?font=Georgia&size=18&duration=2000&pause=100&multiline=true&width=500&height=80&lines=Davide+Buoso;Student+%7C+at+Politecnico+%7C+Torino+and;AI+%7C+Entushiast" alt="Typing SVG" />
+<a href="https://github.com/lambdavi">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=142390&width=435&lines=I'm+Davide+Buoso.+Data+Science+;student+%40+Politecnico+di+Torino." alt="Typing SVG" />
 </a>
 <br/>
 
