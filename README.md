@@ -3,6 +3,8 @@
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=25D6EB&multiline=true&width=435&lines=I'm+Davide+Buoso!;Student+%40+Politecnico+di+Torino;Welcome+to+my+profile" alt="Typing SVG" />
 </a>
 <br/>
+<br/>
+<br/>
 
 <a href="https://gkos.tech">
     <img src="https://img.shields.io/badge/Website-gkos.tech-red?style=flat-square">
