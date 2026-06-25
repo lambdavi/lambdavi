@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/lambdavi/lambdavi/raw/output/profile-night-rainbow.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/lambdavi/lambdavi/raw/output/profile-green-animate.svg">
-  <img alt="3D Contribution Graph" src="https://github.com/lambdavi/lambdavi/raw/output/profile-green-animate.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lambdavi/lambdavi/refs/heads/main/profile-3d-contrib/profile-night-rainbow.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lambdavi/lambdavi/refs/heads/main/profile-3d-contrib/profile-green-animate.svg">
+  <img alt="3D Contribution Graph" src="https://raw.githubusercontent.com/lambdavi/lambdavi/refs/heads/main/profile-3d-contrib/profile-green-animate.svg">
 </picture>
 
 <picture>
