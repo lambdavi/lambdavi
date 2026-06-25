@@ -1,35 +1,28 @@
-name: Generate Profile Widgets
+name: GitHub-Profile-3D-Contrib
 
 on:
-  schedule:
-    # 每天 UTC 时间 18:00 (北京时间凌晨 2:00) 自动运行一次
-    - cron: "25 17 * * *"
-  workflow_dispatch: # 允许手动触发运行
-  push:
-    branches:
-      - main
+  schedule: # 03:00 JST == 18:00 UTC
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-
+    name: generate-github-profile-3d-contrib
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Generate 3D contrib graph
-        uses: yoshi389111/github-profile-3d-contrib@0.8.0
+      - uses: actions/checkout@v5
+      - uses: yoshi389111/github-profile-3d-contrib@latest
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-
-      - name: Collect all outputs
-        run: cp profile-3d-contrib/* dist/
-
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A .
+          if git commit -m "generated"; then
+            git push
+          fi
